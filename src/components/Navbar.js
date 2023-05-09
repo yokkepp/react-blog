@@ -12,17 +12,19 @@ function Navbar({ isAuth }) {
 				<span>ホーム</span>
 			</Link>
 
-			<Link to='/createpost'>
-				<div>
-					<FaBookOpen className='icon' />
-					<span>記事投稿</span>
-				</div>
-			</Link>
 			{isAuth ? (
-				<Link to='/logout'>
-					<FiLogIn className='icon' />
-					<span>ログアウト</span>
-				</Link>
+				<>
+					<Link to='/createpost'>
+						<div>
+							<FaBookOpen className='icon' />
+							<span>記事投稿</span>
+						</div>
+					</Link>
+					<Link to='/logout'>
+						<FiLogIn className='icon' />
+						<span>ログアウト</span>
+					</Link>
+				</>
 			) : (
 				<Link to='/login'>
 					<FiLogIn className='icon' />
