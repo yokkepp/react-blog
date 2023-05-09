@@ -1,0 +1,24 @@
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: green;
+	height: 50px;
+	gap: 45px;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+	transition: all 0.2s;
+}
+
+nav a:hover {
+	color: aquamarine;
+}
+
+.icon {
+	color: aliceblue;
+	font-size: 18px;
+	margin-right: 4px;
+}
